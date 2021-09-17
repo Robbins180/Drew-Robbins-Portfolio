@@ -6,7 +6,6 @@ import { randFloatSpread } from 'three/src/math/MathUtils';
 import { Vector3 } from 'three';
 
 
-
 /*  !!!!!!!!!! Camera and Scene setup * !!!!!!!!! */
 
 const scene = new THREE.Scene()
