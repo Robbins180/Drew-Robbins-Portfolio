@@ -138,11 +138,11 @@ const drew = new THREE.Mesh(
      /*  !!!!!!!!!! Neptune * !!!!!!!!! */
 
 const neptuneTexture = new THREE.TextureLoader().load('images/neptune.jpg')
-const normalTexture = new THREE.TextureLoader().load('images/normal.jpg')
+// const normalTexture = new THREE.TextureLoader().load('images/normal.jpg')
 
 const neptune = new THREE.Mesh(
      new THREE.SphereGeometry(3, 32, 32), 
-     new THREE.MeshStandardMaterial( { map: neptuneTexture, normalMap: normalTexture } ) 
+     new THREE.MeshStandardMaterial( { map: neptuneTexture } ) 
      );
      scene.add(neptune);
 
