@@ -1,0 +1,122 @@
+
+@import url("https://use.typekit.net/jmk3xov.css");
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 350px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  position: absolute;
+  text-align: center;
+  margin: 0px auto;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 20px 0px;
+}
+
+h1, h2, h3, blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: aliceblue;
+}
+
+header {
+  background: var(--dark-bg);
+  grid-column: 2 / span 5;
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+}
+
+header > p {
+  
+  color: aliceblue;
+}
+
+header > h1 {
+  
+  color: aliceblue;
+  border-radius: 2px;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px ##D400FF, 0 0 40px #D400FF #ff4da6, 0 0 50px ##D400FF, 0 0 60px ##D400FF, 0 0 70px #ff4da6, 0 0 80px ##D400FF;
+  }
+}
+
+section {
+  grid-column: 2 / 8;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+  color: white;
+}
+
+.mani {
+  color: white;
+  display: inline-block;
+
+}
+
+.mani > a {
+  color: cyan;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+  
+}
+
+blockquote p {
+  color: black;
+  background-color: white;
+  font-size: 3.5rem;
+  display: inline;
+  /* line-height: 1; */
+  border-radius: 5px;
+  border: 4px solid #AE00FF ;
+  /* border-color: #AE00FF; */
+  
+}
+
+.light {
+  color: cyan;
+  display: inline-block;
+  padding: 10px;
+
+}
+
+.light > p {
+  color: white;
+  padding: 5px;
+}
+
+
+.left {
+  grid-column: 6 / 12;
+}
